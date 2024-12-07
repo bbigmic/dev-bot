@@ -82,5 +82,4 @@ def main():
     application.run_polling()
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 5000))  # Render udostępnia PORT w zmiennych środowiskowych
-    app.run(host="0.0.0.0", port=port)
+    main()

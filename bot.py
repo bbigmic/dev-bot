@@ -6,13 +6,14 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 
 # Słownik przechowujący komendy i ich odpowiedzi
 commands = {
-    "website": "https://devcult.tech/",
-    "chart": "https://example.com/chart",
-    "ca": "0x1234567890abcdef1234567890abcdef12345678"
+    "website": "https://dev-cult.onrender.com/",
+    "chart": "https://pump.fun/coin/J3D728v2apramx6UydCVHfKtBC7wfKmc1YUHJJ6Ppump",
+    "ca": "J3D728v2apramx6UydCVHfKtBC7wfKmc1YUHJJ6Ppump"
 }
 
+ADMINS = os.getenv("ADMINS")
 # Lista administratorów (użytkownicy z uprawnieniami do zarządzania komendami)
-ADMINS = [1087968824]  # Zastąp swoją ID Telegram
+ADMINS = [ADMINS]  # Zastąp swoją ID Telegram
 
 # Funkcja dla komendy start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):

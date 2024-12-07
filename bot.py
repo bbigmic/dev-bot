@@ -1,6 +1,6 @@
 # 841285032 1087968824
 # 7624174806:AAEdh-WlzNAJ2hGfODSOjCXOVKB3SlUqRMA
-
+import os
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 

@@ -11,8 +11,6 @@ commands = {
     "ca": "J3D728v2apramx6UydCVHfKtBC7wfKmc1YUHJJ6Ppump"
 }
 
-
-
 # Lista administratorów (użytkownicy z uprawnieniami do zarządzania komendami)
 ADMINS = [1087968824]  # Zastąp swoją ID Telegram
 
@@ -67,9 +65,8 @@ async def list_commands(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Główna funkcja uruchamiająca bota
 def main():
-    TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-    if not TOKEN:
-        raise ValueError("TELEGRAM_BOT_TOKEN is not set in environment variables.")
+    TOKEN = "7624174806:AAEdh-WlzNAJ2hGfODSOjCXOVKB3SlUqRMA"  # Wprowadź swój token bota
+    application = Application.builder().token(TOKEN).build()
 
     # Handlery
     application.add_handler(CommandHandler("start", start))
